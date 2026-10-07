@@ -9,28 +9,23 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#123F43">
 <title>Krista Global - Recruitment Company in Ahmedabad  </title>
-<script>
-/* =====================================================
+<script>/* =====================================================
    KRISTA GLOBAL - EASY EDIT SETTINGS
    Change ONLY these values when you need to update
    the phone number or social media pages.
 ===================================================== */
-const KRISTA_CONTACT = {
-  phone: " ",
+const KRISTA_CONTACT = {phone: " ",
   linkedin: "https://www.linkedin.com/company/krista-global18/about/",
   instagram: "https://www.instagram.com/kristaglobal_llc/",
-  facebook: "https://www.facebook.com/YOUR_FACEBOOK_PAGE/"
-};
+  facebook: "https://www.facebook.com/YOUR_FACEBOOK_PAGE/"};
 </script>
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
+{"@context":"https://schema.org",
   "@type":"Organization",
   "name":"Krista Global",
   "description":"Career-focused staffing and recruitment support connecting skilled professionals with global opportunities.",
   "areaServed":["Global Markets"],
-  "serviceType":["Resume Optimization","Profile Marketing","Technical Training","Interview Assistance","Employer Connect"]
-}
+  "serviceType":["Resume Optimization","Profile Marketing","Technical Training","Interview Assistance","Employer Connect"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +51,6 @@ const KRISTA_CONTACT = {
 <script>
 const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
 document.querySelectorAll('.faq-item button').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement;item.classList.toggle('open');btn.querySelector('.plus').textContent=item.classList.contains('open')?'-':'+';}));
-
 document.getElementById('phoneDisplay').textContent = KRISTA_CONTACT.phone;
 document.getElementById('phoneDisplay').href = 'tel:' + KRISTA_CONTACT.phone.replace(/\s+/g,'');
 document.getElementById('linkedinLink').href = KRISTA_CONTACT.linkedin;
