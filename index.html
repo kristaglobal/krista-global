@@ -102,13 +102,13 @@ contact{background:#fff}.contact-box{background:var(--navy);border-radius:30px;p
 </footer>
 <script>
 const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
-document.querySelectorAll('.faq-item button').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement;item.classList.toggle('open');btn.querySelector('span').textContent=item.classList.contains('open')?'−':'+'}));
-
-// Editable contact + social links
-document.getElementById('phoneDisplay').textContent = KRISTA_CONTACT.phone;
-document.getElementById('phoneDisplay').href = 'tel:' + KRISTA_CONTACT.phone.replace(/\s+/g,'');
-document.getElementById('linkedinLink').href = KRISTA_CONTACT.linkedin;
+   
 document.getElementById('instagramLink').href = KRISTA_CONTACT.instagram;
 document.getElementById('facebookLink').href = KRISTA_CONTACT.facebook;
+document.getElementById('linkedinLink').href = KRISTA_CONTACT.linkedin;
+
+document.getElementById('phoneDisplay').textContent = KRISTA_CONTACT.phone;
+document.getElementById('phoneDisplay').href = 'tel:' + KRISTA_CONTACT.phone.replace(/\s+/g,'');
+
 </script>
 </body></html>
